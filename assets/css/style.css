@@ -1710,14 +1710,16 @@ table img {
   justify-content: center;
 }
 
-.sigma_header .sigma_logo-wrapper {
+.sigma_header .sigma_logo-wrapper,
+.sigma_aside .sigma_logo-wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 10px 0;
 }
 
-.sigma_header .sigma_logo-wrapper .sigma_logo {
+.sigma_header .sigma_logo-wrapper .sigma_logo,
+.sigma_aside .sigma_logo-wrapper .sigma_logo {
   letter-spacing: 2px;
   max-width: 118px;
   font-family: var(--thm-font);
@@ -1730,11 +1732,12 @@ table img {
   line-height: 20px;
 }
 
-.sigma_header .sigma_logo-wrapper .sigma_logo.sigma_logo-green {
-  color: var(--thm-base);
+.sigma_aside .sigma_logo-wrapper .sigma_logo {
+  color: black;
 }
 
-.sigma_header .sigma_logo-wrapper .sigma_logo-icon {
+.sigma_header .sigma_logo-wrapper .sigma_logo-icon,
+.sigma_aside .sigma_logo-wrapper .sigma_logo-icon {
   width: 80px;
   margin-right: 10px;
 
@@ -1742,11 +1745,13 @@ table img {
 }
 
 @media (min-width: 1024px) {
-  .sigma_header .sigma_logo-wrapper .sigma_logo-icon {
+  .sigma_header .sigma_logo-wrapper .sigma_logo-icon,
+  .sigma_aside .sigma_logo-wrapper .sigma_logo-icon {
     width: 80px;
   }
 
-  .sigma_header .sigma_logo-wrapper .sigma_logo {
+  .sigma_header .sigma_logo-wrapper .sigma_logo,
+  .sigma_aside .sigma_logo-wrapper .sigma_logo {
     line-height: 26px;
     font-size: 30px;
   }
@@ -11038,9 +11043,10 @@ background-color: var(--thm-border);
   margin-left: 10px;
 }
 
-.sigma_contact-map {
+.sigma_contact-map,
+#map {
   width: 100%;
-  height: 800px;
+  height: 400px;
   position: relative;
 }
 
@@ -11823,6 +11829,89 @@ background-color: var(--thm-border);
 
 .sigma_banner .banner-links {
   margin-top: 50px;
+  flex-direction: column;
+  align-items: flex-start !important;
+}
+
+.sigma_banner .banner-links p {
+  font-size: 13px;
+  line-height: 19px;
+  width: 200px;
+  display: inline-block;
+  vertical-align: top;
+  font-style: italic;
+}
+
+.donate-canada a,
+.donate-usa a {
+  margin: 0;
+  margin-bottom: 5px;
+  vertical-align: baseline;
+  min-width: 180px;
+  margin-right: 20px;
+}
+
+@media (max-width: 991px) {
+  .banner-links {
+    display: none !important;
+  }
+  /* .sigma_banner .banner-links p {
+    color: white;
+    font-size: 14px;
+    width: 180px;
+  }
+
+  .donate-canada,
+  .donate-usa {
+    text-align: center;
+  }
+
+  .donate-canada a,
+  .donate-usa a {
+    margin-right: 0;
+  } */
+}
+
+/* @media (min-width: 400px) and (max-width: 991px) {
+  .donate-canada a,
+  .donate-usa a {
+    margin-right: 15px;
+  }
+} */
+
+.mobile-banner-links-section {
+  padding: 40px 0;
+}
+
+@media (min-width: 992px) {
+  .mobile-banner-links-section {
+    display: none;
+  }
+}
+
+.mobile-banner-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+@media (min-width: 410px) {
+  .mobile-banner-links {
+    justify-content: space-between;
+    max-width: 430px;
+    margin: 0 auto;
+  }
+}
+
+.mobile-banner-links .donate {
+  text-align: center;
+  max-width: 180px;
+  margin: 5px;
+  display: inline-block;
+}
+
+.mobile-banner-links-section .donate-title {
+  text-align: center;
 }
 
 .sigma_banner .sigma_banner-social {
@@ -15898,9 +15987,11 @@ background-color: var(--thm-border);
   margin-bottom: 100px;
 } */
 
-.sigma_image-abe-diana {
-  margin-top: 37px;
-  margin-bottom: -50px;
+@media (min-width: 992px) {
+  .sigma_image-abe-diana {
+    margin-top: 37px;
+    margin-bottom: -50px;
+  }
 }
 
 .sigma_image-abe-diana .sigma_image-abe-diana-img {
@@ -15911,12 +16002,26 @@ background-color: var(--thm-border);
   border: 5px solid white;
 }
 
+.sigma_image-abe-diana {
+  margin-top: 37px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+@media (max-width: 567px) {
+  .sigma_image-abe-diana .sigma_image-abe-diana-img {
+    width: 290px;
+    height: 290px;
+  }
+}
+
 .section-our-jorney {
   padding-top: 50px;
 }
 
+
 .section-title.our-jorney {
-  width: 600px;
+  max-width: 600px;
   max-width: none;
   text-align: center;
   margin: 0 auto;
@@ -15932,4 +16037,31 @@ background-color: var(--thm-border);
 
 .sigma_portfolio .sigma_portfolio-thumb {
   margin: 10px;
+}
+
+
+@media (max-width: 991px) {
+  .sigma_banner .sigma_banner-text .title { 
+    color: white;
+  }
+
+  .sigma_banner .sigma_banner-text .title + p { 
+    color: white;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .sigma_banner.style-3.light-overlay:before, .sigma_banner.style-4.light-overlay:before {
+    background-color: darkgray;
+  }
+}
+
+@media (max-width: 768px) {
+  .sigma_isotope-filter > div.mobile-off {
+    display: none;
+  }
+
+  .sigma_about.style-12 .sigma_about-content .sigma_about-contact span {
+    font-size: 26px;
+  }
 }

@@ -858,13 +858,13 @@
     // Preloader
     $('.sigma_preloader').addClass('hidden');
 
-    // Newsletter popup
-    if(!checkCookie('newsletter_popup_viewed')){
-      setTimeout(function(){
-        $("#sigma_popup-newsletter").modal('show');
-        $(".sigma_popup").addClass('show');
-      }, 3000);
-    }
+    // // Newsletter popup
+    // if(!checkCookie('newsletter_popup_viewed')){
+    //   setTimeout(function(){
+    //     $("#sigma_popup-newsletter").modal('show');
+    //     $(".sigma_popup").addClass('show');
+    //   }, 3000);
+    // }
 
   });
 

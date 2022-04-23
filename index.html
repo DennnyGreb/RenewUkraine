@@ -25,8 +25,10 @@
   <link href="assets/css/plugins/magnific-popup.css" rel="stylesheet">
   <link href="assets/css/style.css" rel="stylesheet">
   <link href="assets/fonts/font-awesome.min.css" rel="stylesheet">
-  <link href="assets/fonts/flaticon/flaticon.css" rel="stylesheet">
-  <script src="https://www.google.com/recaptcha/api.js?render=6LdxUhMaAAAAAIrQt-_6Gz7F_58S4FlPWaxOh5ib"></script>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+  integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+  crossorigin=""/>
+  <!-- <script src="https://www.google.com/recaptcha/api.js?render=6LdxUhMaAAAAAIrQt-_6Gz7F_58S4FlPWaxOh5ib"></script> -->
 </head>
 
 <body class="btn-style-6 btn-square sidebar-style-1" data-spy="scroll" data-target="#section-header" data-offset="180">
@@ -39,17 +41,20 @@
       </div>
       <div class="sigma_logo-wrapper">
         <img src="assets/img/map.png" class="sigma_logo-icon">
-        <a class="sigma_logo sigma_logo-green" href="index.html">
+        <a class="sigma_logo" href="index.html">
           Renew Ukraine
         </a>
       </div>
       <ul class="navbar-nav">
         <li class="menu-item">
+          <a href="#section-hero" class="nav-link">Donate</a>
+        </li>
+        <li class="menu-item">
           <a href="#section-about" class="nav-link">About Us</a>
-        <!-- </li>
-            <li class="menu-item">
-          <a href="#section-testimonial" class="nav-link">Testimonials</a>
-        </li> -->
+        </li>
+        <li class="menu-item">
+          <a href="#section-portfolio" class="nav-link">Photos</a>
+        </li>
         <li class="menu-item">
           <a href="#section-our-jorney" class="nav-link">Our Jorney</a>
         </li>
@@ -96,15 +101,18 @@
         <div class="sigma_header-bottom d-none d-lg-block">
           <div class="navbar navbar-secondary">
             <ul class="navbar-nav">
-                <li class="menu-item">
-                  <a href="#section-about" class="nav-link">About Us</a>
-                </li>
-                <li class="menu-item">
-                  <a href="#section-testimonial" class="nav-link">Testimonials</a>
-                </li>
-                <li class="menu-item">
-                  <a href="#section-our-jorney" class="nav-link">Our Jorney</a>
-                </li>
+              <li class="menu-item">
+                <a href="#section-hero" class="nav-link">Donate</a>
+              </li>
+              <li class="menu-item">
+                <a href="#section-about" class="nav-link">About Us</a>
+              </li>
+              <li class="menu-item">
+                <a href="#section-portfolio" class="nav-link">Photos</a>
+              </li>
+              <li class="menu-item">
+                <a href="#section-our-jorney" class="nav-link">Our Jorney</a>
+              </li>
             </ul>
           </div>
         </div>
@@ -135,10 +143,37 @@
               <h1 class="title">
                 Help Us to Renew Ukraine!
               </h1>
-              <p>We are Abe and Diana Bible and we are willing to help with renewing devasteted Ukraine. You can join our mission with prayer, help and donation for needs of millions of ukrainians.</p>
+              <p>We are Abe and Diane Bible and we are willing to help with renewing devasteted Ukraine. You can join our mission with prayer, help and donation for needs of millions of ukrainians.</p>
               <div class="banner-links d-flex align-items-center">
-                <a href="#section-about" class="sigma_btn light">Get Started</a>
-                <a href="#" class="sigma_btn ml-4">Donate</a>
+                <div class="donate-canada">
+                  <a href="https://www.meaworldwide.org/donate-today" target="_blank" class="sigma_btn">Donate Canada</a>
+                  <p class="designate">Designate for Abe and Diane Bible. All funds will go to help Ukraine.</p>
+                </div>
+                <div class="donate-usa">
+                  <a href="https://swharvest.org" target="_blank" class="sigma_btn">Donate USA</a>
+                  <p class="designate">Please designate your gift for “Ukraine Relief Fund”. Giving is tax-deductible in the USA</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mobile-banner-links-section bg-gray">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <h3 class="title donate-title">
+              Donation links
+            </h3>
+            <div class="mobile-banner-links">
+              <div class="donate donate-canada">
+                <a href="https://www.meaworldwide.org/donate-today" target="_blank" class="sigma_btn">Donate Canada</a>
+                <p class="designate">Designate for Abe and Diane Bible. All funds will go to help Ukraine.</p>
+              </div>
+              <div class="donate donate-usa">
+                <a href="https://swharvest.org" target="_blank" class="sigma_btn">Donate USA</a>
+                <p class="designate">Please designate your gift for “Ukraine Relief Fund”. Giving is tax-deductible in the USA.</p>
               </div>
             </div>
           </div>
@@ -198,11 +233,11 @@
     <!--about End-->
   </div>
   <div id="section-portfolio">
-    <div class="section">
+    <div class="section bg-gray">
       <div class="container">
         <div class="section-title centered has-element">
           <!-- <span class="subtitle"></span> -->
-          <h3 class="title">Ukraine needs your help!</h3>
+          <h3 class="title">Devastation is huge. Ukraine needs your help!</h3>
         </div>
         <!-- <ul class="sigma_isotope-filter-items has-background">
           <li class="sigma_isotope-trigger active" data-filter="*">All</li>
@@ -251,6 +286,27 @@
             <div class="sigma_portfolio style-6">
               <div class="sigma_portfolio-thumb">
                 <img src="assets/img/devastation/370x296-4.jpg" alt="portfolio">
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 category-3 category-4 mobile-off">
+            <div class="sigma_portfolio style-6">
+              <div class="sigma_portfolio-thumb">
+                <img src="assets/img/devastation/370x296-5.jpg" alt="portfolio">
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 category-3 category-4 mobile-off">
+            <div class="sigma_portfolio style-6">
+              <div class="sigma_portfolio-thumb">
+                <img src="assets/img/devastation/370x296-6.jpg" alt="portfolio">
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 category-3 category-4 mobile-off">
+            <div class="sigma_portfolio style-6">
+              <div class="sigma_portfolio-thumb">
+                <img src="assets/img/devastation/370x296-7.jpg" alt="portfolio">
               </div>
             </div>
           </div>
@@ -533,8 +589,7 @@
       </div>
     </div>
     <div class="sigma_contact-map">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.9914406081493!2d2.292292615201654!3d48.85837360866272!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e2964e34e2d%3A0x8ddca9ee380ef7e0!2sEiffel%20Tower!5e0!3m2!1sen!2sin!4v1571115084828!5m2!1sen!2sin" height="800" allowfullscreen="">
-      </iframe>
+      <div class="map" id="map"></div>
     </div>
     <!--contact-form End-->
   </div>
@@ -550,7 +605,7 @@
     <footer class="sigma_footer style-3 pb-0">
       <div class="container">
         <div class="sigma_footer-bottom mt-0 d-block d-sm-flex align-items-center justify-content-between">
-          <ul class="sigma_social-icons mb-3 mb-sm-0">
+          <!-- <ul class="sigma_social-icons mb-3 mb-sm-0">
             <li>
               <a href="#"><i class="fab fa-facebook-f"></i></a>
             </li>
@@ -560,7 +615,7 @@
             <li>
               <a href="#"><i class="fab fa-instagram"></i></a>
             </li>
-          </ul>
+          </ul> -->
           <div class="sigma_footer-copyright m-0">
             <p class="mb-0">&copy; Renew Ukraine -
               <a href="#">2022</a>
@@ -583,8 +638,22 @@
   <script src="assets/js/plugins/jquery.inview.min.js" type="text/javascript"></script>
   <script src="assets/js/plugins/ion.rangeSlider.min.js" type="text/javascript"></script>
   <script src="assets/js/plugins/jquery.validate.min.js" type="text/javascript"></script>
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+  integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+  crossorigin=""></script>
   <script src="assets/js/main.js" type="text/javascript"></script>
-  <script src="assets/functions/mf_form.js" type="text/javascript"></script>
+  <!-- <script src="assets/functions/mf_form.js" type="text/javascript"></script> -->
+  <script>
+      var map = L.map('map').setView([50.622080, 26.247920], 13);
+      L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
+        maxZoom: 18,
+        id: 'mapbox/streets-v11',
+        tileSize: 512,
+        zoomOffset: -1,
+        accessToken: 'pk.eyJ1IjoiZGVubnlncmViIiwiYSI6ImNrOXpqM3AyNTAyeGczZW42NTdhczl4bmQifQ.AARYAUjZGhzw24hxGAM7PQ'
+      }).addTo(map);
+      var marker = L.marker([50.622080, 26.247920]).addTo(map);
+      marker.bindPopup("<p class='popup__address'>We started over here<p>").openPopup();
+  </script>
 </body>
-
 </html>
