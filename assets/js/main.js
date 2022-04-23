@@ -856,7 +856,7 @@
   $(window).on('load', function() {
 
     // Preloader
-    $('.sigma_preloader').addClass('hidden');
+    // $('.sigma_preloader').addClass('hidden');
 
     // // Newsletter popup
     // if(!checkCookie('newsletter_popup_viewed')){
