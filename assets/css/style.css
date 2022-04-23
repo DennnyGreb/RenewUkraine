@@ -1706,15 +1706,52 @@ table img {
   padding: 0;
 }
 
+.navbar.navbar-secondary {
+  justify-content: center;
+}
+
 .sigma_header .sigma_logo-wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 10px 0;
 }
-.sigma_header .sigma_logo-wrapper .sigma_logo{
-  max-width: 130px;
+
+.sigma_header .sigma_logo-wrapper .sigma_logo {
+  letter-spacing: 2px;
+  max-width: 118px;
+  font-family: var(--thm-font);
+  font-weight: bold;
+  color: white;
+  line-height: 26px;
+  font-size: 30px;
+
+  font-size: 20px;
+  line-height: 20px;
 }
+
+.sigma_header .sigma_logo-wrapper .sigma_logo.sigma_logo-green {
+  color: var(--thm-base);
+}
+
+.sigma_header .sigma_logo-wrapper .sigma_logo-icon {
+  width: 80px;
+  margin-right: 10px;
+
+  width: 60px;
+}
+
+@media (min-width: 1024px) {
+  .sigma_header .sigma_logo-wrapper .sigma_logo-icon {
+    width: 80px;
+  }
+
+  .sigma_header .sigma_logo-wrapper .sigma_logo {
+    line-height: 26px;
+    font-size: 30px;
+  }
+}
+
 
 .sigma_header .navbar-nav {
   flex-direction: row;
@@ -11946,6 +11983,23 @@ background-color: var(--thm-border);
   width: 50%;
   height: 100%;
   z-index: -1;
+  background-image: url("../img/banner.jpg");
+  background-position: 35% 50%;
+  background-repeat: no-repeat;
+}
+
+@media (min-width: 1024px) {
+  .sigma_banner.style-3 .sigma_banner-image {
+    background-image: url("../img/banner-desktop.jpg");
+    background-position: 30% 50%;
+  }
+}
+
+
+@media (min-width: 1344px) {
+  .sigma_banner.style-3 .sigma_banner-image {
+    background-position: 0% 50%;
+  }
 }
 
 /* style 4 */
@@ -12166,7 +12220,7 @@ background-color: var(--thm-border);
 /*-------------- Footer Sections --------------------------- */
 .sigma_footer {
   background-color: #f7f7f7;
-  padding: 80px 0;
+  /* padding: 80px 0; */
   background-size: cover;
   background-position: center;
   position: relative;
@@ -15828,4 +15882,54 @@ background-color: var(--thm-border);
     flex: 0 0 33.33%;
   }
 
+}
+
+/* CUSTOM DENYS STYLES */
+
+.sigma_header-container {
+  padding: 0;
+}
+
+.sigma_header.style-8.has-dark-bg .sigma_header-middle .sigma_logo-wrapper {
+  min-height: 80px;
+}
+
+/* .section-about {
+  margin-bottom: 100px;
+} */
+
+.sigma_image-abe-diana {
+  margin-top: 37px;
+  margin-bottom: -50px;
+}
+
+.sigma_image-abe-diana .sigma_image-abe-diana-img {
+  border-radius: 50%;
+  object-fit: cover;
+  width: 370px;
+  height: 370px;
+  border: 5px solid white;
+}
+
+.section-our-jorney {
+  padding-top: 50px;
+}
+
+.section-title.our-jorney {
+  width: 600px;
+  max-width: none;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.section-title.our-jorney .title {
+  margin-bottom: 40px;
+}
+
+.sigma_header .sigma_header-top-links li a i.mail-icon {
+  margin-right: 0;
+}
+
+.sigma_portfolio .sigma_portfolio-thumb {
+  margin: 10px;
 }
