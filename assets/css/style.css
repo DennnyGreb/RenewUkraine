@@ -12077,13 +12077,12 @@ background-color: var(--thm-border);
   background-repeat: no-repeat;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 992px) {
   .sigma_banner.style-3 .sigma_banner-image {
-    background-image: url("../img/banner-desktop.jpg");
+    background-image: url("../img/banner-desk.png");
     background-position: 30% 50%;
   }
 }
-
 
 @media (min-width: 1344px) {
   .sigma_banner.style-3 .sigma_banner-image {
