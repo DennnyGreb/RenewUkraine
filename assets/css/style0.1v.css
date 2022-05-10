@@ -16118,3 +16118,51 @@ background-color: var(--thm-border);
     min-height: 334px;
   }
 }
+
+/* Blog */
+
+.sigma_banner.style-3 .sigma_banner-image.sigma_banner-image-blog {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-image: url("../img/blog4.jpg");
+  background-position: 35% 50%;
+  background-repeat: no-repeat;
+}
+
+@media (min-width: 992px) {
+  .sigma_banner.style-3 .sigma_banner-image.sigma_banner-image-blog {
+    width: 50%;
+    background-image: url("../img/blog4.jpg");
+    background-position: 30% 50%;
+  }
+}
+
+@media (min-width: 992px) {
+  .sigma_post.blog-page {
+    margin-bottom: 70px;
+  }
+}
+
+.sigma_banner .banner-slider-inner-blog {
+  padding: 170px 0 70px;
+}
+
+.section.section-padding-blog {
+  padding-top: 60px;
+}
+
+/* Blog Post */
+
+.section.section-padding-blog-post {
+  padding-top: 100px;
+}
+
+@media (min-width: 768px) {
+  .section.section-padding-blog-post {
+    padding-top: 120px;
+  }
+}
